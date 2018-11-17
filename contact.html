@@ -22,21 +22,24 @@
         <div class="content">
             <h1>Contact</h1>
             <hr />
-            <form action="/action_page.php">
+            <form action="">
                 <fieldset>
                     <legend>Please submit your information and I'll be in touch with you ASAP:</legend>
-                    First name:<br>
-                    <input type="text" name="fname" placeholder="First name"><br>
-                    Last name:<br>
-                    <input type="text" name="lname" placeholder="Last name"><br>
-                    E-mail: <br>
-                    <input type="email" name="emailaddress" placeholder="example@yourdomain.com">
-                    <br>
-                    Message: <br>
+                    <ul>
+                    <li><label>First name:</label>
+                    <input aria-required="true" type="text" name="fname" placeholder="First name">
+                    </li>
+                    <li><label>Last name:</label>
+                    <input type="text" name="lname" placeholder="Last name">
+                    </li>
+                    <li><label>E-mail: </label>
+                    <input required type="email" name="emailaddress" placeholder="example@yourdomain.com">
+                    </li>
+                    <li><label>Message:</label>
                     <textarea rows="4" name="comment" placeholder="Enter your message here">
-                    </textarea>
-                    <br>
+                    </textarea> </li>
                     <input type="submit" value="Submit">
+                    </ul>
                 </fieldset>
             </form>
         </div>
