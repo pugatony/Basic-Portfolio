@@ -95,15 +95,11 @@ hr {
     color: #ddd;
 }
 
-.flextext {
-    display: flex;
-    flex-direction: column;
-}
 
-.description {
-    margin: 0 0 0 10px;
-    padding: 0;
-    float: left;
+#about{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
 }
 me{
     float: left;
@@ -111,7 +107,13 @@ me{
     max-width:60%;
     height:auto;
 }
-
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+strong{display: inline-block;}
 footer {
     background-color: #666;
     color: white;
@@ -143,20 +145,28 @@ footer {
 form{
     display: flex;
     flex-wrap:wrap; 
+    width: 100%;
     justify-content: center;
     align-items: baseline;
 }
 label{
     float: left; 
     width: 6em; 
-    text-align: right;
+    text-align: left;
 }
 textarea, input {
-    width: 300px;
+    width: 900px;
     text-align: left;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    text-align: center;
+    color: #fff;
+    padding: 5px 20px;
 }
 input:required{
     background-color: yellow;
